@@ -32,3 +32,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## RSC & SSR
+
+SSR is bad for not being interactive immediately, have to wait for the js to be downloaded
+RSC - every time you go to a page/component it's going to be rendered on the server
+SSR - only render on server on initial page load
+
+No way to import server component into a client component
+
+## Server Actions
+
+Next.js v14 will allow server action responses.
+Use them for tracking, analytics, web hooks, things that happen in the background, but when it comes to the UI it still better
+to use client components
